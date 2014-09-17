@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cold\audio\audio.h" />
+    <ClInclude Include="cold\audio\channel.h" />
+    <ClInclude Include="cold\audio\music.h" />
+    <ClInclude Include="cold\audio\priority.h" />
+    <ClInclude Include="cold\audio\sound.h" />
+    <ClInclude Include="cold\audio\sound_manager.h" />
+    <ClInclude Include="cold\block\render_chunk.h" />
+    <ClInclude Include="cold\game\game.h" />
+    <ClInclude Include="cold\input\op_input.h" />
+    <ClInclude Include="cold\math\geometry.h" />
+    <ClInclude Include="cold\math\ray.h" />
+    <ClInclude Include="cold\net\address.h" />
+    <ClInclude Include="cold\net\basic_socket.h" />
+    <ClInclude Include="cold\net\impl\impl.h" />
+    <ClInclude Include="cold\net\impl\_sysimpl.h" />
+    <ClInclude Include="cold\net\impl\win32.h" />
+    <ClInclude Include="cold\net\packet.h" />
+    <ClInclude Include="cold\net\socket.h" />
+    <ClInclude Include="cold\render\render_state.h" />
+    <ClInclude Include="cold\render\util\line_triangulation.h" />
+    <ClInclude Include="cold\ui\label.h" />
+    <ClInclude Include="cold\ui\line_graph.h" />
+    <ClInclude Include="cold\util\buffer_vector.h" />
+    <ClInclude Include="cold\util\endian.h" />
+    <ClInclude Include="cold\util\maybe.h" />
+    <ClInclude Include="cold\util\string.h" />
+    <ClInclude Include="cold\util\buffered_stream.h" />
+    <ClInclude Include="cold\platform\platform.h" />
+    <ClInclude Include="cold\render\blend_state.h" />
+    <ClInclude Include="cold\render\impl\debug.h" />
+    <ClInclude Include="cold\render\font\basic_ascii_font.h" />
+    <ClInclude Include="cold\render\font.h" />
+    <ClInclude Include="cold\render\font\fnt_font.h" />
+    <ClInclude Include="cold\render\font\font_char.h" />
+    <ClInclude Include="cold\render\font\font_impl.h" />
+    <ClInclude Include="cold\render\util\sprite_batch.h" />
+    <ClInclude Include="cold\resource\file_handle.h" />
+    <ClInclude Include="cold\resource\handle.h" />
+    <ClInclude Include="cold\resource\logging_resource_loader.h" />
+    <ClInclude Include="cold\resource\raw_texture.h" />
+    <ClInclude Include="cold\resource\resource.h" />
+    <ClInclude Include="cold\resource\resource_loader.h" />
+    <ClInclude Include="cold\resource\resource_manager.h" />
+    <ClInclude Include="cold\engine\block.h" />
+    <ClInclude Include="cold\engine\camera.h" />
+    <ClInclude Include="cold\engine\entity.h" />
+    <ClInclude Include="cold\engine\handle.h" />
+    <ClInclude Include="cold\engine\map.h" />
+    <ClInclude Include="cold\engine\quadtree.h" />
+    <ClInclude Include="cold\engine\render\chunk.h" />
+    <ClInclude Include="cold\engine\scene.h" />
+    <ClInclude Include="cold\engine\wind_vector.h" />
+    <ClInclude Include="cold\game\entity\physical.h" />
+    <ClInclude Include="cold\game\entity\player.h" />
+    <ClInclude Include="cold\input\func_input.h" />
+    <ClInclude Include="cold\input\bind.h" />
+    <ClInclude Include="cold\input\input.h" />
+    <ClInclude Include="cold\input\io.h" />
+    <ClInclude Include="cold\input\keyboard.h" />
+    <ClInclude Include="cold\input\key_input.h" />
+    <ClInclude Include="cold\input\arrow_input.h" />
+    <ClInclude Include="cold\input\mouse.h" />
+    <ClInclude Include="cold\input\mouse_input.h" />
+    <ClInclude Include="cold\input\multiplier_input.h" />
+    <ClInclude Include="cold\math\bounding_box.h" />
+    <ClInclude Include="cold\math\bounding_frustum.h" />
+    <ClInclude Include="cold\math\plane.h" />
+    <ClInclude Include="cold\math\plane_iterator.h" />
+    <ClInclude Include="cold\math\rectangle.h" />
+    <ClInclude Include="cold\physics\aabb.h" />
+    <ClInclude Include="cold\platform\application.h" />
+    <ClInclude Include="cold\platform\io.h" />
+    <ClInclude Include="cold\platform\os.h" />
+    <ClInclude Include="cold\render\impl\base_buffer.h" />
+    <ClInclude Include="cold\render\enums.h" />
+    <ClInclude Include="cold\render\impl\gl.h" />
+    <ClInclude Include="cold\render\index_buffer.h" />
+    <ClInclude Include="cold\render\mesh.h" />
+    <ClInclude Include="cold\render\render.h" />
+    <ClInclude Include="cold\render\shader.h" />
+    <ClInclude Include="cold\render\texture.h" />
+    <ClInclude Include="cold\render\types.h" />
+    <ClInclude Include="cold\render\util\basic_vertex_declarations.h" />
+    <ClInclude Include="cold\render\util\basic_vertex_types.h" />
+    <ClInclude Include="cold\render\util\mesh_builder.h" />
+    <ClInclude Include="cold\render\util\triangle_mesh_builder.h" />
+    <ClInclude Include="cold\render\vertex_array.h" />
+    <ClInclude Include="cold\render\vertex_buffer.h" />
+    <ClInclude Include="cold\render\vertex_declaration.h" />
+    <ClInclude Include="cold\render\vertex_element.h" />
+    <ClInclude Include="cold\resource\text_resource_loader.h" />
+    <ClInclude Include="cold\resource\text_resource_parser.h" />
+    <ClInclude Include="cold\script\compile\ast.h" />
+    <ClInclude Include="cold\script\compile\compile.h" />
+    <ClInclude Include="cold\script\compile\scan.h" />
+    <ClInclude Include="cold\script\compile\parse.h" />
+    <ClInclude Include="cold\script\compile\token.h" />
+    <ClInclude Include="cold\script\function.h" />
+    <ClInclude Include="cold\script\list.h" />
+    <ClInclude Include="cold\script\object.h" />
+    <ClInclude Include="cold\script\param_list.h" />
+    <ClInclude Include="cold\script\param_list_static.h" />
+    <ClInclude Include="cold\ui\container.h" />
+    <ClInclude Include="cold\ui\control.h" />
+    <ClInclude Include="cold\ui\panel.h" />
+    <ClInclude Include="cold\util\config_scanner.h" />
+    <ClInclude Include="cold\util\delegate.h" />
+    <ClInclude Include="cold\script\engine.h" />
+    <ClInclude Include="cold\script\function_definition.h" />
+    <ClInclude Include="cold\script\function_instance.h" />
+    <ClInclude Include="cold\script\instance.h" />
+    <ClInclude Include="cold\script\instruction.h" />
+    <ClInclude Include="cold\script\list_instance.h" />
+    <ClInclude Include="cold\script\instance_handle.h" />
+    <ClInclude Include="cold\script\object_instance.h" />
+    <ClInclude Include="cold\script\param.h" />
+    <ClInclude Include="cold\script\value.h" />
+    <ClInclude Include="cold\util\assert.h" />
+    <ClInclude Include="cold\util\count_vector.h" />
+    <ClInclude Include="cold\util\either.h" />
+    <ClInclude Include="cold\util\raw_vector.h" />
+    <ClInclude Include="cold\util\sized_stack.h" />
+    <ClInclude Include="cold\util\unique_array.h" />
+    <ClInclude Include="cold\util\unique_ptr.h" />
+    <ClInclude Include="soil\image_DXT.h" />
+    <ClInclude Include="soil\image_helper.h" />
+    <ClInclude Include="soil\SOIL.h" />
+    <ClInclude Include="soil\stbi_DDS_aug.h" />
+    <ClInclude Include="soil\stbi_DDS_aug_c.h" />
+    <ClInclude Include="soil\stb_image_aug.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cold\audio\audio.cpp" />
+    <ClCompile Include="cold\audio\music.cpp" />
+    <ClCompile Include="cold\audio\sound.cpp" />
+    <ClCompile Include="cold\audio\sound_manager.cpp" />
+    <ClCompile Include="cold\engine\camera.cpp" />
+    <ClCompile Include="cold\engine\entity.cpp" />
+    <ClCompile Include="cold\engine\map.cpp" />
+    <ClCompile Include="cold\engine\render\chunk.cpp" />
+    <ClCompile Include="cold\engine\scene.cpp" />
+    <ClCompile Include="cold\game\game.cpp" />
+    <ClCompile Include="cold\input\keyboard.cpp" />
+    <ClCompile Include="cold\input\mouse.cpp" />
+    <ClCompile Include="cold\math\geometry.cpp" />
+    <ClCompile Include="cold\math\rectangle.cpp" />
+    <ClCompile Include="cold\net\address.cpp" />
+    <ClCompile Include="cold\net\impl\impl.cpp" />
+    <ClCompile Include="cold\render\render_state.cpp" />
+    <ClCompile Include="cold\test\read_text_from_keyboard.cpp" />
+    <ClCompile Include="cold\ui\line_graph.cpp" />
+    <ClCompile Include="test9.cpp" />
+    <ClCompile Include="cold\util\endian.cpp" />
+    <ClCompile Include="cold\util\string.cpp" />
+    <ClCompile Include="cold\render\blend_state.cpp" />
+    <ClCompile Include="cold\render\font.cpp" />
+    <ClCompile Include="cold\render\font\fnt_font.cpp" />
+    <ClCompile Include="cold\resource\file_handle.cpp" />
+    <ClCompile Include="cold\util\config_scanner.cpp" />
+    <ClCompile Include="test8.cpp" />
+    <ClCompile Include="cold\net\impl\win32.cpp" />
+    <ClCompile Include="cold\net\net.cpp" />
+    <ClCompile Include="cold\net\socket.cpp" />
+    <ClCompile Include="cold\util\buffered_stream.cpp" />
+    <ClCompile Include="cold\render\impl\debug.cpp" />
+    <ClCompile Include="cold\render\font\basic_ascii_font.cpp" />
+    <ClCompile Include="cold\render\util\sprite_batch.cpp" />
+    <ClCompile Include="cold\resource\load_info.cpp" />
+    <ClCompile Include="cold\resource\logging_resource_loader.cpp" />
+    <ClCompile Include="cold\resource\raw_texture.cpp" />
+    <ClCompile Include="cold\resource\resource_loader.cpp" />
+    <ClCompile Include="cold\resource\resource_manager.cpp" />
+    <ClCompile Include="cold\resource\text_resource_loader.cpp" />
+    <ClCompile Include="test7.cpp" />
+    <ClCompile Include="cold\render\render.cpp" />
+    <ClCompile Include="cold\render\texture.cpp" />
+    <ClCompile Include="cold\resource\text_resource_parser.cpp" />
+    <ClCompile Include="cold\script\compile\compile.cpp" />
+    <ClCompile Include="cold\script\function.cpp" />
+    <ClCompile Include="cold\script\function_definition.cpp" />
+    <ClCompile Include="cold\script\function_instance.cpp" />
+    <ClCompile Include="cold\script\instance.cpp" />
+    <ClCompile Include="cold\script\instruction.cpp" />
+    <ClCompile Include="cold\script\list.cpp" />
+    <ClCompile Include="cold\script\list_instance.cpp" />
+    <ClCompile Include="cold\script\object_instance.cpp" />
+    <ClCompile Include="cold\script\param.cpp" />
+    <ClCompile Include="cold\script\param_list_static.cpp" />
+    <ClCompile Include="cold\ui\container.cpp" />
+    <ClCompile Include="cold\ui\panel.cpp" />
+    <ClCompile Include="soil\image_DXT.c" />
+    <ClCompile Include="soil\image_helper.c" />
+    <ClCompile Include="soil\SOIL.c" />
+    <ClCompile Include="soil\stb_image_aug.c" />
+    <ClCompile Include="test6.cpp" />
+    <ClCompile Include="cold\script\engine.cpp" />
+    <ClCompile Include="cold\script\compile\ast.cpp" />
+    <ClCompile Include="cold\script\compile\parse.cpp" />
+    <ClCompile Include="cold\script\compile\scan.cpp" />
+    <ClCompile Include="cold\script\compile\token.cpp" />
+    <ClCompile Include="cold\script\value.cpp" />
+    <ClCompile Include="test5.cpp" />
+    <ClCompile Include="test4.cpp" />
+    <ClCompile Include="cold\game\entity\physical.cpp" />
+    <ClCompile Include="cold\game\entity\player.cpp" />
+    <ClCompile Include="cold\math\bounding_box.cpp" />
+    <ClCompile Include="cold\math\bounding_frustum.cpp" />
+    <ClCompile Include="cold\math\plane.cpp" />
+    <ClCompile Include="cold\physics\aabb.cpp" />
+    <ClCompile Include="cold\platform\application.cpp" />
+    <ClCompile Include="cold\platform\io.cpp" />
+    <ClCompile Include="cold\platform\os.cpp" />
+    <ClCompile Include="cold\render\impl\base_buffer.cpp" />
+    <ClCompile Include="cold\render\enums.cpp" />
+    <ClCompile Include="cold\render\index_buffer.cpp" />
+    <ClCompile Include="cold\render\mesh.cpp" />
+    <ClCompile Include="cold\render\shader.cpp" />
+    <ClCompile Include="cold\render\util\basic_vertex_declarations.cpp" />
+    <ClCompile Include="cold\render\util\mesh_builder.cpp" />
+    <ClCompile Include="cold\render\util\triangle_mesh_builder.cpp" />
+    <ClCompile Include="cold\render\vertex_array.cpp" />
+    <ClCompile Include="cold\render\vertex_buffer.cpp" />
+    <ClCompile Include="cold\render\vertex_declaration.cpp" />
+    <ClCompile Include="cold\util\assert.cpp" />
+    <ClCompile Include="cold\util\count_vector.cpp" />
+    <ClCompile Include="cold\util\raw_vector.cpp" />
+    <ClCompile Include="test3.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="test2.cpp" />
+    <ClCompile Include="test\test_ui.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cold\net\net.h" />
+    <None Include="cold\resource\load_info.h" />
+    <None Include="data\shader\test.frag" />
+    <None Include="data\shader\test.vert" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{45267C0E-9138-44CF-92AE-F03D83A364DE}</ProjectGuid>
+    <RootNamespace>cold</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)include\sdl;$(ProjectDir)include\glew;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)lib\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)include\sdl;$(ProjectDir)include\glew;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)lib\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;opengl32.lib;glu32.lib;glew32s.lib;ws2_32.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;opengl32.lib;glu32.lib;glew32s.lib;ws2_32.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
